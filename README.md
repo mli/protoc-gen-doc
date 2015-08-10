@@ -75,3 +75,7 @@ outputs were built.
 [fop]: http://xmlgraphics.apache.org/fop/ "Apache™ FOP (Formatting Objects Processor)"
 [html_preview]: https://rawgit.com/estan/protoc-gen-doc/master/examples/doc/example.html "HTML Example Output"
 [obs]: https://software.opensuse.org/download.html?project=home%3Aestan%3Aprotoc-gen-doc&package=protoc-gen-doc
+
+## My Node: rst
+
+protoc --plugin=/home/muli/work/protoc-gen-doc/protoc-gen-doc --doc_out=rst,out.rst:. *.proto

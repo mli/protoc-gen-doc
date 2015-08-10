@@ -1,0 +1,36 @@
+{{#files}}
+
+{{file_name}}
+------------------
+
+{{#file_messages}}
+
+{{message_long_name}}
+~~~~~~~~~~~~~~~~~~~
+{{message_description}}
+
+.. csv-table::
+   :header: Type, Field, Description
+
+{{#message_fields}}
+   {{field_long_type}}, {{field_name}}, "{{#nobr}}{{field_description}}{{/nobr}}"
+{{/message_fields}}
+
+{{/file_messages}}
+
+
+{{#file_enums}}
+
+{{enum_long_name}}
+~~~~~~~~~~~~~~~~
+{{enum_description}}
+
+.. csv-table::
+   :header: Name, Description
+
+{{#enum_values}}
+   {{value_name}}, "{{#nobr}}{{value_description}}{{/nobr}}"
+{{/enum_values}}
+{{/file_enums}}
+
+{{/files}}
